@@ -1,2 +1,0 @@
-[pytest11]
-context_metrics = context_metrics.plugin
