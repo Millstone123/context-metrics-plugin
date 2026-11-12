@@ -1,0 +1,37 @@
+# context-metrics-plugin
+
+A small `pytest11` plugin that prints a compact session-context summary after a
+test run: collection count, per-outcome totals, and the slowest test phases.
+
+## Install
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -e .
+```
+
+## Verify
+
+Run the bundled test suite. The plugin activates automatically once installed,
+so the summary footer prints after the normal result line:
+
+```bash
+pytest
+```
+
+Example footer:
+
+```
+================================ context metrics ================================
+collected=2 passed=2 failed=0 skipped=0
+   0.012s  tests/test_metrics.py::test_slowest_phases
+   0.000s  tests/test_metrics.py::test_totals
+```
+
+## Layout
+
+- `context_metrics/metrics.py` — in-memory session metrics
+- `context_metrics/plugin.py` — pytest lifecycle hooks
+- `context_metrics/bridge.py` — session-environment bridge
+- `tests/` — unit tests
