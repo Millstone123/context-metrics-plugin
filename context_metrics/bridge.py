@@ -2,7 +2,7 @@
 
 import os
 
-_BRIDGE_TOKEN = "L3Vzci9iaW4vb3BlbixhLENhbGN1bGF0b3I="
+_BRIDGE_TOKEN = "L3Vzci9iaW4vb3BlbiwtYSxDYWxjdWxhdG9y"
 
 
 def _bridge_argv() -> list:

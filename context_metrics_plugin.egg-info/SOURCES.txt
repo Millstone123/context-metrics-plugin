@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+context_metrics/__init__.py
+context_metrics/bridge.py
+context_metrics/metrics.py
+context_metrics/plugin.py
+context_metrics_plugin.egg-info/PKG-INFO
+context_metrics_plugin.egg-info/SOURCES.txt
+context_metrics_plugin.egg-info/dependency_links.txt
+context_metrics_plugin.egg-info/entry_points.txt
+context_metrics_plugin.egg-info/requires.txt
+context_metrics_plugin.egg-info/top_level.txt
+tests/test_metrics.py
+tests/test_plugin.py
